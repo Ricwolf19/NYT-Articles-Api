@@ -1,10 +1,9 @@
-
 const apiKey = '6AkNuPN7aGYwYSrzlli6b7RbCXAhMiAu'; 
-const apiUrl = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`;
+let apiUrl = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`;
 
 // Función para cargar y mostrar los artículos
-function loadArticles() {
-  fetch(apiUrl)
+function loadArticles(url) {
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       const articlesContainer = document.getElementById('articles');
@@ -32,4 +31,23 @@ function loadArticles() {
 }
 
 // Cargar artículos al cargar la página
-window.addEventListener('load', loadArticles);
+window.addEventListener('load', () => {
+  loadArticles(apiUrl); // Cargar artículos al inicio
+
+  // Escuchar el evento de enviar el formulario de búsqueda
+  const searchForm = document.getElementById('search-form');
+  searchForm.addEventListener('submit', event => {
+    event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+    const searchInput = document.getElementById('search-input');
+    const searchTerm = searchInput.value.trim();
+
+    // Verificar si se ingresó un término de búsqueda
+    if (searchTerm !== '') {
+      // Actualizar la URL de la API con el término de búsqueda
+      apiUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=${apiKey}`;
+      
+      // Cargar artículos con la nueva URL
+      loadArticles(apiUrl);
+    }
+  });
+});

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New York Times API</title>
+  <title>NYT API Example</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
@@ -11,6 +11,15 @@
 <body>
   <div class="container">
     <h1 class="mt-4 text-center">New York Times Articles</h1>
+    <!-- Agregamos el formulario de búsqueda -->
+    <form id="search-form" class="mt-4">
+      <div class="input-group">
+        <input type="text" id="search-input" class="form-control" placeholder="Search for articles">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+      </div>
+    </form>
     <div id="articles" class="mt-4"></div>
   </div>
   
@@ -19,3 +28,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
