@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://th.bing.com/th/id/R.8d5a2dd6586ef4f9a4058a953ffcb840?rik=tFOQ1UcYhfivNw&riu=http%3a%2f%2fjulianlennon.com%2fwp-content%2fuploads%2f2017%2f04%2fthe-new-york-times-logo.jpg&ehk=zmFAHRmCpjFVPodZPZi67DttkUWTPd3JZreoiJzYS5k%3d&risl=&pid=ImgRaw&r=0" alt="LBC Suppliers Logo" width="300" height="250">
+  <img src="https://th.bing.com/th/id/R.8d5a2dd6586ef4f9a4058a953ffcb840?rik=tFOQ1UcYhfivNw&riu=http%3a%2f%2fjulianlennon.com%2fwp-content%2fuploads%2f2017%2f04%2fthe-new-york-times-logo.jpg&ehk=zmFAHRmCpjFVPodZPZi67DttkUWTPd3JZreoiJzYS5k%3d&risl=&pid=ImgRaw&r=0" alt="NYT Logo" width="300" height="250">
 </p>
 
 
