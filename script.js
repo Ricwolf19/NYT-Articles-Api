@@ -1,4 +1,6 @@
-const apiKey = '6AkNuPN7aGYwYSrzlli6b7RbCXAhMiAu'; 
+require('dotenv').config();
+const apiKey = process.env.apiKey;
+
 let apiUrl = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`;
 
 // Función para cargar y mostrar los artículos
